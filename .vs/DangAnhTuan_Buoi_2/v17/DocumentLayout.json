@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1D4C6622-BBAA-4CC6-8122-AD28E67BA0FF}|DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2.vcxproj|D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2\\Phan_2_BT_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D4C6622-BBAA-4CC6-8122-AD28E67BA0FF}|DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2.vcxproj|solutionrelative:DangAnhTuan_Buoi_2\\Phan_2_BT_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D4C6622-BBAA-4CC6-8122-AD28E67BA0FF}|DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2.vcxproj|D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1D4C6622-BBAA-4CC6-8122-AD28E67BA0FF}|DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2.vcxproj|solutionrelative:DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -27,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Phan_2_BT_2.cpp",
+              "DocumentMoniker": "D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2\\Phan_2_BT_2.cpp",
+              "RelativeDocumentMoniker": "DangAnhTuan_Buoi_2\\Phan_2_BT_2.cpp",
+              "ToolTip": "D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2\\Phan_2_BT_2.cpp",
+              "RelativeToolTip": "DangAnhTuan_Buoi_2\\Phan_2_BT_2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-17T07:50:45.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Phan_2_BT_1.cpp",
               "DocumentMoniker": "D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp",
               "RelativeDocumentMoniker": "DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp",
               "ToolTip": "D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp",
               "RelativeToolTip": "DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAwwM8AAAAsAAAA",
+              "ViewState": "AQIAAOIAAAAAAAAAAAAuwOsAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-17T07:08:04.613Z",
               "EditorCaption": ""
