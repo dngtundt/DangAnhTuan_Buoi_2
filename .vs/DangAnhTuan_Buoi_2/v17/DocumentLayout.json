@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D4C6622-BBAA-4CC6-8122-AD28E67BA0FF}|DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2.vcxproj|D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D4C6622-BBAA-4CC6-8122-AD28E67BA0FF}|DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2.vcxproj|solutionrelative:DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +23,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Phan_2_BT_1.cpp",
+              "DocumentMoniker": "D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp",
+              "RelativeDocumentMoniker": "DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp",
+              "ToolTip": "D:\\dtun coder\\BTVN_THKTLT_Buoi_2\\DangAnhTuan_Buoi_2\\DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp",
+              "RelativeToolTip": "DangAnhTuan_Buoi_2\\Phan_2_BT_1.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAuwCEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-17T07:08:04.613Z",
+              "EditorCaption": ""
             }
           ]
         }
