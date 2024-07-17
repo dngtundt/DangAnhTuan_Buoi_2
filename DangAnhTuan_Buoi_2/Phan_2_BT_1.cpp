@@ -73,3 +73,24 @@ void selection_sort(int* a, int n) {
         a[min_idx] = temp;
     }
 }
+// Hàm sắp xếp Quick Sort
+void quick_sort(int* a, int left, int right) {
+    if (left >= right) {
+        return;
+    }
+    int pivot = a[(left + right) / 2];
+    int i = left, j = right;
+    while (i <= j) {
+        while (a[i] < pivot) i++;
+        while (a[j] > pivot) j--;
+        if (i <= j) {
+            int temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+            i++;
+            j--;
+        }
+    }
+    quick_sort(a, left, j);
+    quick_sort(a, i, right);
+}
