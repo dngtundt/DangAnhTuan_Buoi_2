@@ -41,3 +41,35 @@ void interchange_sort(int* a, int n, int ascending) {
         }
     }
 }
+// Hàm tìm kiếm nhị phân
+int binary_search(int* a, int n, int x) {
+    int left = 0, right = n - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (a[mid] == x) {
+            return mid;
+        }
+        else if (a[mid] < x) {
+            left = mid + 1;
+        }
+        else {
+            right = mid - 1;
+        }
+    }
+    return -1;
+}
+
+// Hàm sắp xếp Selection Sort
+void selection_sort(int* a, int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int min_idx = i;
+        for (int j = i + 1; j < n; j++) {
+            if (a[j] < a[min_idx]) {
+                min_idx = j;
+            }
+        }
+        int temp = a[i];
+        a[i] = a[min_idx];
+        a[min_idx] = temp;
+    }
+}
