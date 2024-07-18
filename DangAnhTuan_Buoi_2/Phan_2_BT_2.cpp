@@ -97,6 +97,55 @@ MixedNumber divide_mixed_numbers(MixedNumber a, MixedNumber b) {
     return fraction_to_mixed(quotient_numerator, quotient_denominator);
 }
 
+// Hàm sắp xếp Interchange Sort
+void interchange_sort(MixedNumber* b, int n, int ascending) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (ascending ? compare_mixed_numbers(b[i], b[j]) > 0 : compare_mixed_numbers(b[i], b[j]) < 0) {
+                MixedNumber temp = b[i];
+                b[i] = b[j];
+                b[j] = temp;
+            }
+        }
+    }
+}
+
+// Hàm sắp xếp Selection Sort
+void selection_sort(MixedNumber* b, int n, int ascending) {
+    for (int i = 0; i < n - 1; i++) {
+        int min_idx = i;
+        for (int j = i + 1; j < n; j++) {
+            if (ascending ? compare_mixed_numbers(b[j], b[min_idx]) < 0 : compare_mixed_numbers(b[j], b[min_idx]) > 0) {
+                min_idx = j;
+            }
+        }
+        MixedNumber temp = b[i];
+        b[i] = b[min_idx];
+        b[min_idx] = temp;
+    }
+}
+
+// Hàm sắp xếp Quick Sort
+void quick_sort(MixedNumber* b, int left, int right, int ascending) {
+    if (left >= right) {
+        return;
+    }
+    MixedNumber pivot = b[(left + right) / 2];
+    int i = left, j = right;
+    while (i <= j) {
+        while (ascending ? compare_mixed_numbers(b[i], pivot) < 0 : compare_mixed_numbers(b[i], pivot) > 0) i++;
+        while (ascending ? compare_mixed_numbers(b[j], pivot) > 0 : compare_mixed_numbers(b[j], pivot) < 0) j--;
+        if (i <= j) {
+            MixedNumber temp = b[i];
+            b[i] = b[j];
+            b[j] = temp;
+            i++;
+            j--;
+        }
+    }
+    quick_sort(b, left, j, ascending);
+    quick_sort(b, i, right, ascending);
+}
 
 // Hàm hiển thị menu
 void display_menu() {
@@ -110,6 +159,12 @@ void display_menu() {
     printf("7. Tinh hieu 2 hon so\n");
     printf("8. Tinh tich 2 hon so\n");
     printf("9. Tinh thuong 2 hon so\n");
+    printf("10. Sap xep tang dan bang Interchange Sort\n");
+    printf("11. Sap xep giam dan bang Interchange Sort\n");
+    printf("12. Sap xep tang dan bang Selection Sort\n");
+    printf("13. Sap xep giam dan bang Selection Sort\n");
+    printf("14. Sap xep tang dan bang Quick Sort\n");
+    printf("15. Sap xep giam dan bang Quick Sort\n");
     printf("0. Thoat\n");
     printf("==============\n");
 }
@@ -257,6 +312,72 @@ int main() {
             }
             break;
         }
+
+        case 10:
+            if (n == 0) {
+                printf("Hay tao mang hon so truoc!\n");
+            }
+            else {
+                interchange_sort(b, n, 1);
+                printf("Mang sau khi Sap xep tang dan bang Interchange Sort:\n");
+                print_mixed_array(b, n);
+            }
+            break;
+
+        case 11:
+            if (n == 0) {
+                printf("Hay tao mang hon so truoc!\n");
+            }
+            else {
+                interchange_sort(b, n, 0);
+                printf("Mang sau khi Sap xep giam dan bang Interchange Sort:\n");
+                print_mixed_array(b, n);
+            }
+            break;
+
+        case 12:
+            if (n == 0) {
+                printf("Hay tao mang hon so truoc!\n");
+            }
+            else {
+                selection_sort(b, n, 1);
+                printf("Mang sau khi Sap xep tang dan bang Selection Sort:\n");
+                print_mixed_array(b, n);
+            }
+            break;
+
+        case 13:
+            if (n == 0) {
+                printf("Hay tao mang hon so truoc!\n");
+            }
+            else {
+                selection_sort(b, n, 0);
+                printf("Mang sau khi Sap xep giam dan bang Selection Sort:\n");
+                print_mixed_array(b, n);
+            }
+            break;
+
+        case 14:
+            if (n == 0) {
+                printf("Hay tao mang hon so truoc!\n");
+            }
+            else {
+                quick_sort(b, 0, n - 1, 1);
+                printf("Mang sau khi Sap xep tang dan bang Quick Sort:\n");
+                print_mixed_array(b, n);
+            }
+            break;
+
+        case 15:
+            if (n == 0) {
+                printf("Hay tao mang hon so truoc!\n");
+            }
+            else {
+                quick_sort(b, 0, n - 1, 0);
+                printf("Mang sau khi Sap xep giam dan bang Quick Sort:\n");
+                print_mixed_array(b, n);
+            }
+            break;
 
         case 0:
             printf("Thoat chuong trinh.\n");
